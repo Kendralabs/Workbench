@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/headerComponent";
 import { FlowsContext } from "../../contexts/flowsContext";
 import Page from "./components/PageComponent";
-
+import logo from "../../assets/fintricitylogo.png"
 export default function FlowPage(): JSX.Element {
   const { flows, tabId, setTabId, version } = useContext(FlowsContext);
   const { id } = useParams();
@@ -27,8 +27,8 @@ export default function FlowPage(): JSX.Element {
           href="https://logspace.ai/"
           className="logspace-page-icon"
         >
-          {version && <div className="mt-1">⛓️ Langflow v{version}</div>}
-          <div className={version ? "mt-2" : "mt-1"}>Created by Logspace</div>
+          {version && <div className="mt-1"><img src={logo} /> Workbench </div>}
+          <div className={version ? "mt-2" : "mt-1"}>Created by Fintricity</div>
         </a>
       </div>
     </>
