@@ -1,7 +1,6 @@
 <!-- Title -->
 
-# ![image](https://github.com/TESLAOPUnix/Workbench/assets/69970952/03ddc13c-955f-434e-80cd-c33c39fec4ca)
- Workbench
+# ![image](https://github.com/TESLAOPUnix/Workbench/assets/69970952/03ddc13c-955f-434e-80cd-c33c39fec4ca)  Workbench
 
 ~ An effortless way to experiment and prototype [LangChain](https://github.com/hwchase17/langchain) pipelines ~
 
