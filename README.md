@@ -1,22 +1,8 @@
 <!-- Title -->
 
-# ![image](https://github.com/TESLAOPUnix/Workbench/assets/69970952/03ddc13c-955f-434e-80cd-c33c39fec4ca)  Workbench
 
+# ![final](https://github.com/TESLAOPUnix/Workbench/assets/69970952/a86ca343-d9e2-4cbe-954d-20f624f0b14a) Workbench
 ~ An effortless way to experiment and prototype [LangChain](https://github.com/hwchase17/langchain) pipelines ~
-
-<p>
-<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/logspace-ai/langflow" />
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/logspace-ai/langflow" />
-<img alt="" src="https://img.shields.io/github/repo-size/logspace-ai/langflow" />
-<img alt="GitHub Issues" src="https://img.shields.io/github/issues/logspace-ai/langflow" />
-<img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/logspace-ai/langflow" />
-<img alt="Github License" src="https://img.shields.io/github/license/logspace-ai/langflow" />
-</p>
-
-<p>
-<a href="https://discord.gg/EqksyE2EX9"><img alt="Discord Server" src="https://dcbadge.vercel.app/api/server/EqksyE2EX9?compact=true&style=flat"/></a>
-<a href="https://huggingface.co/spaces/Logspace/Langflow"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg" alt="HuggingFace Spaces"></a>
-</p>
 
 <a href="https://github.com/logspace-ai/langflow">
     <img width="100%" src="https://github.com/logspace-ai/langflow/blob/dev/img/langflow-demo.gif?raw=true"></a>
