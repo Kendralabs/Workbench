@@ -8,9 +8,6 @@ trigger:
 resources:
 - repo: self
 
-variables:
-  tag: '$(Build.BuildId)'
-
 stages:
 - stage: Build
   displayName: Build image
@@ -25,4 +22,5 @@ stages:
         containerRegistry: 'azure-container-registry'
         repository: 'workbench'
         command: 'buildAndPush'
+        tags: '$(Build.SourceVersion)'
         Dockerfile: '**/Dockerfile'
