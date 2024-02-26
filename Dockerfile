@@ -14,4 +14,5 @@ WORKDIR $HOME/app
 COPY --chown=user . $HOME/app
 
 RUN pip install langflow -U --user
+RUN pip install transformers
 CMD ["python", "-m", "langflow", "run", "--host", "0.0.0.0", "--port", "7860"]
