@@ -15,8 +15,7 @@ COPY ./ ./
 # Install dependencies
 RUN poetry config virtualenvs.create false && poetry install --no-interaction --no-ansi
 
-# Pin specific versions to avoid conflicts
-RUN poetry add "botocore@>=1.34.51,<1.35.0"
-RUN poetry add pymysql
+# Explicitly pin compatible versions
+RUN poetry add "botocore@1.34.51" "langchain-aws@0.1.6" pymysql
 
 CMD ["sh", "./container-cmd-cdk.sh"]
