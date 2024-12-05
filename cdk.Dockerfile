@@ -5,17 +5,18 @@ WORKDIR /app
 # Install Poetry
 RUN apt-get update && apt-get install gcc g++ curl build-essential postgresql-server-dev-all -y
 RUN curl -sSL https://install.python-poetry.org | python3 -
-# # Add Poetry to PATH
+# Add Poetry to PATH
 ENV PATH="${PATH}:/root/.local/bin"
-# # Copy the pyproject.toml and poetry.lock files
+
+# Copy Poetry files
 COPY poetry.lock pyproject.toml ./
-# Copy the rest of the application codes
 COPY ./ ./
 
 # Install dependencies
 RUN poetry config virtualenvs.create false && poetry install --no-interaction --no-ansi
 
-RUN poetry add botocore
+# Pin specific versions to avoid conflicts
+RUN poetry add "botocore@>=1.34.51,<1.35.0"
 RUN poetry add pymysql
 
 CMD ["sh", "./container-cmd-cdk.sh"]
